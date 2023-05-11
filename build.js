@@ -8,8 +8,8 @@ const options = [
   },
   {
     files: 'public/*.html',
-    from: /<link rel="stylesheet" href="tailwind/g,
-    to: '<link rel="stylesheet" href="<?php bloginfo( stylesheet_directory ); ?>/tailwind',
+    from: /<link rel="stylesheet" href="tailwind.min.css"/g,
+    to: '<link rel="stylesheet" href="<?php bloginfo( stylesheet_directory ); ?>/tailwind.min.css?ver=' + Date.now() + '"',
   }
 ];
 
