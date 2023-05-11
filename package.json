@@ -6,8 +6,7 @@
   "author": "",
   "description": "",
   "scripts": {
-    "update-image-paths": "replace-in-file --global 'images/' '<?php bloginfo( 'stylesheet_directory' ); ?>/images/' src/html/*",
-
+    "update-image-paths": "node build.js",
     "browsersync": "browser-sync start --directory --server ./public --files ./public/* --startPath index.html",
     "clean": "rimraf public/*",
     "copy-assets": "cpx \"src/assets/**/*.*\" public/",
@@ -21,7 +20,8 @@
     "watch-css": "tailwindcss build -i src/tailwind/tailwind.css -c src/tailwind/tailwind.config.js -o public/tailwind.min.css --minify --watch"
   },
   "dependencies": {
-    "tailwindcss": "^3.0.7"
+    "tailwindcss": "^3.0.7",
+    "replace-in-file": "^6.3.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
@@ -31,7 +31,6 @@
     "npm-run-all": "^4.1.5",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
-    "replace-in-file": "^6.3.5",
     "rimraf": "^3.0.2"
   }
 }
