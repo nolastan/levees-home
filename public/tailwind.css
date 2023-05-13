@@ -780,6 +780,10 @@ video {
   display: none;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -1080,6 +1084,10 @@ video {
 
 .to-navGreen-900 {
   --tw-gradient-to: #b7d86e var(--tw-gradient-to-position);
+}
+
+.fill-current {
+  fill: currentColor;
 }
 
 .object-cover {
@@ -1400,6 +1408,11 @@ video {
   color: rgb(20 83 45 / var(--tw-text-opacity));
 }
 
+.text-indigo-100 {
+  --tw-text-opacity: 1;
+  color: rgb(224 231 255 / var(--tw-text-opacity));
+}
+
 .text-orange-50 {
   --tw-text-opacity: 1;
   color: rgb(255 247 237 / var(--tw-text-opacity));
@@ -1432,6 +1445,10 @@ video {
 
 .opacity-25 {
   opacity: 0.25;
+}
+
+.opacity-80 {
+  opacity: 0.8;
 }
 
 .opacity-95 {
