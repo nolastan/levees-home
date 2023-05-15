@@ -3,3 +3,27 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer components {
+  .widget_mc4wp_form_widget .widget-title {
+    @apply hidden;
+  }
+  .mc4wp-form {
+    @apply text-gray-500;
+  }
+  .mc4wp-form input[type="email"] {
+    @apply w-full mb-3 sm:mb-0 sm:mr-4 py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 rounded-lg;
+  }
+  .mc4wp-form input[type="submit"] {
+    @apply w-full mt-3 relative hover:bg-green-900 cursor-pointer inline-block flex-shrink-0 py-3 px-5 text-sm font-semibold text-orange-50 bg-green-700 rounded-md overflow-hidden;
+  }
+  .mc4wp-form span {
+    @apply text-gray-500 text-sm leading-10;
+  }
+  .mc4wp-alert {
+    @apply text-sm text-red-500;
+  }
+  .mc4wp-form input[type="checkbox"] {
+    @apply inline-block mr-1 mt-4;
+  }
+}

@@ -3,6 +3,11 @@ module.exports = {
         './src/pug/*.pug',
         './src/html/*.html',
     ],
+    safelist: [
+        'mc4wp-form',
+        'widget_mc4wp_form_widget',
+        'mc4wp-alert'
+    ],
     
     theme: {
         extend: {
