@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Caption+Caption:400i,400,700,700i|PT+Serif+Caption:400i,400&amp;subset=latin">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="tailwind.min.css">
+    <link rel="stylesheet" href="tailwind.css">
     <script src="/js/main.js"></script>
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/8bc8c6ac9898e50f77b62662f/2a783543d2856f8b891c17c94.js");</script>
 </head>
@@ -36,26 +36,18 @@
         <nav class="border-navGreen-500 border-y relative bg-gradient-to-b from-navGreen-100 to-navGreen-900 mb-12 md:mb-24 z-50">
           <div class="container px-4 mx-auto">
             <div class="flex items-center flex-col relative">
-              <div class="lg:hidden ml-auto">
-                <button class="navbar-burger flex w-12 h-12 items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-md transition duration-200">
-                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 12H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M3 6H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </button>
-              </div>
-              <ul class="hidden lg:flex lg:w-auto">
-                <li><a class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-l border-gray-400 px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-medium" href="/blog/">Blog</a></li>
-                <li><a class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400  px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-medium" href="/press-and-media-resources/">About</a></li>
-                <li><a class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400  px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-medium" href="/mission-and-goals-of-levees-org/">Projects</a></li>
-                <li><a class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400  px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-medium" href="/recent-media-hits/">National press</a></li>
-                <li><a class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400  px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-medium" href="/board-of-directors/">Board</a></li>
-                <li><a class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400  px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-medium" href="/board-of-advisors/">Advisors</a></li>
-                <li><a class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400  px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-medium" href="/other/allied-organizations/">Partners</a></li>
-                <li><a class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400  px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-medium" href="/educational-resources/">Education</a></li>
-                <li><a class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400  px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-medium" href="/contact/">Contact</a></li>
-                <li><a class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400  px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-medium" href="/donate/">Donate</a></li>
+              <ul class="lg:flex lg:w-auto">
+                <li class="inline-block"><a class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r lg:border-l border-gray-400 px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-medium" href="/blog/">Blog</a></li>
+                <li class="inline-block"><a class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400  px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-medium" href="/press-and-media-resources/">About</a></li>
+                <li class="inline-block"><a class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400  px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-medium" href="/mission-and-goals-of-levees-org/">Projects</a></li>
+                <li class="hidden lg:inline-block"><a class="inline-block hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400 px-5 leading-8 align-middle text-xs text-gray-800 hover:text-black font-medium" href="/recent-media-hits/">National press</a></li>
+                <li class="hidden lg:inline-block"><a class="inline-block hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400 px-5 leading-8 align-middle text-xs text-gray-800 hover:text-black font-medium" href="/board-of-directors/">Board</a></li>
+                <li class="hidden lg:inline-block"><a class="inline-block hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400 px-5 leading-8 align-middle text-xs text-gray-800 hover:text-black font-medium" href="/board-of-advisors/">Advisors</a></li>
+                <li class="hidden lg:inline-block"><a class="inline-block hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400 px-5 leading-8 align-middle text-xs text-gray-800 hover:text-black font-medium" href="/other/allied-organizations/">Partners</a></li>
+                <li class="hidden md:inline-block"><a class="inline-block hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400 px-5 leading-8 align-middle text-xs text-gray-800 hover:text-black font-medium" href="/educational-resources/">Education</a></li>
+                <li class="hidden md:inline-block"><a class="inline-block hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400 px-5 leading-8 align-middle text-xs text-gray-800 hover:text-black font-medium" href="/contact/">Contact</a></li>
+                <li class="hidden lg:inline-block"><a class="inline-block hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-r-gray-400 px-5 leading-8 align-middle text-xs text-gray-800 hover:text-black font-medium" href="/donate/">Donate</a></li>
+                <li class="navbar-burger lg:hidden inline-block"><span class="hover:bg-gradient-to-t from-navGreen-100 to-navGreen-900 border-r border-gray-400 px-5 leading-8 align-middle inline-block text-xs text-gray-800 hover:text-black font-bold cursor-pointer">More…</span></li>
               </ul>
             </div>
           </div>
@@ -120,15 +112,12 @@
             </div>
             <div>
               <ul class="mb-2">
-                <li><a class="block py-4 px-5 text-gray-900 hover:bg-green-100 rounded-lg" href="/blog/">Blog</a></li>
-                <li><a class="block py-4 px-5 text-gray-900 hover:bg-green-100 rounded-lg" href="/press-and-media-resources/">About</a></li>
-                <li><a class="block py-4 px-5 text-gray-900 hover:bg-green-100 rounded-lg" href="/mission-and-goals-of-levees-org/">Projects</a></li>
                 <li><a class="block py-4 px-5 text-gray-900 hover:bg-green-100 rounded-lg" href="/recent-media-hits/">National press</a></li>
                 <li><a class="block py-4 px-5 text-gray-900 hover:bg-green-100 rounded-lg" href="/board-of-directors/">Board</a></li>
                 <li><a class="block py-4 px-5 text-gray-900 hover:bg-green-100 rounded-lg" href="/board-of-advisors/">Advisors</a></li>
                 <li><a class="block py-4 px-5 text-gray-900 hover:bg-green-100 rounded-lg" href="/other/allied-organizations/">Partners</a></li>
-                <li><a class="block py-4 px-5 text-gray-900 hover:bg-green-100 rounded-lg" href="/educational-resources/">Education</a></li>
-                <li><a class="block py-4 px-5 text-gray-900 hover:bg-green-100 rounded-lg" href="/contact/">Contact</a></li>
+                <li><a class="md:hidden block py-4 px-5 text-gray-900 hover:bg-green-100 rounded-lg" href="/educational-resources/">Education</a></li>
+                <li><a class="md:hidden block py-4 px-5 text-gray-900 hover:bg-green-100 rounded-lg" href="/contact/">Contact</a></li>
                 <li><a class="block py-4 px-5 text-gray-900 hover:bg-green-100 rounded-lg" href="/donate/">Donate</a></li>
               </ul>
             </div>
@@ -449,8 +438,11 @@
               <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
                 <div class="flex flex-col h-full max-w-xs mx-auto md:max-w-none px-6 py-9 md:pl-9 md:pr-12 bg-white rounded-3xl shadow-lg">
                   <h4 class="text-xl font-semibold text-gray-900 mb-4">MYTH: New Orleans has a peculiar geography in that it relies heavily on levees for protection. </h4>
-                  <p class="text-gray-500 mb-4">TRUTH: Sixty-two percent of the U.S. population lives in counties protected by levees. Click on map below to enlarge.
+                  <p class="text-gray-500 mb-4">TRUTH: Sixty-two percent of the U.S. population lives in counties protected by levees.
       </p>
+                  <a style="cursor: zoom-in;" href="https://levees.org/2/wp-content/uploads/2021/04/Levee-by-county-map-5.png">
+                    <img src="https://levees.org/2/wp-content/uploads/2021/04/Levee-by-county-map-5-1024x634.png" alt="Levee by county map" width="1024" height="634" class="mb-8" />
+                  </a>
                   <a class="inline-block mt-auto text-xs font-semibold text-green-900 hover:underline" href="https://www.nola.com/news/environment/article_87712b66-d815-11ea-82b7-9bcce95a8936.html">Source: FEMA.</a>
                 </div>
               </div>
